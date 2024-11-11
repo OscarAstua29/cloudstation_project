@@ -1,5 +1,6 @@
 # Use Node v11.2 as the base image.
 FROM node:11.2.0-alpine
+
 #Set the working directory
 WORKDIR /usr/app
 
