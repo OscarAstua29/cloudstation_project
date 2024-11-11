@@ -3,14 +3,14 @@ name: CI/CD Workflow (services/articles-management)
 on:
   push:
     paths: 
-      - 'services/articles-management'
+      - 'services/articles-management/**'
     branches:
       - developer
       - master
 
   pull_request:
     paths: 
-      - 'services/articles-management'
+      - 'services/articles-management/**'
     branches:
       - developer
       - master
