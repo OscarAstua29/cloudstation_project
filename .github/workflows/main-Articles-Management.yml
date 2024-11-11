@@ -6,20 +6,20 @@ on:
       - 'services/articles-management/**'
 
     branches:
-      - developer
+      - develop
       - master
 
   pull_request:
     paths: 
       - 'services/articles-management/**'
     branches:
-      - developer
+      - develop
       - master
 
 jobs:
   linter-and-tests:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/developer'
+    if: github.ref == 'refs/heads/develop'
     steps:
       - name: Checkout code
         uses: actions/checkout@v3 #checkoutv3 clone the code in the runner enviroment as a virtual machine
